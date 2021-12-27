@@ -64,7 +64,7 @@ nav ul li a{
     font-weight: bold;
     letter-spacing: 1px;
     color:#1a1a1a;
-    font-size: 40px;
+    font-size: 60px;
 }
 .text-container p:nth-child(3){
     font-family: myriad pro regular;
@@ -107,7 +107,7 @@ button:active{
     transform: scale(1.1);
 }
 .model{
-    height: 560px;
+    height: 476px;
     position: absolute;
     bottom:60px;
     left:70%;
@@ -209,18 +209,22 @@ button:active{
 }
 .box-1{
     background-image: url("services-1.png");
+    margin: 5px;
 
 }
 .box-2{
     background-image: url("services-2.png");
+    margin: 5px;
     
 }
 .box-3{
     background-image: url("servies-3.png");
+    margin: 5px;
     
 }
 .box-4{
     background-image: url("servies-3.png");
+    margin: 5px;
     
 }
 
