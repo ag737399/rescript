@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT FORM</title>
+    <!--stylesheet-->
+    <link rel="stylesheet" href="contacts1.css">
+    <!--using fontawesome-->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js"crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section>
+        <!--navigation-->
+        <nav>
+            <!--logo-->
+            <a href="#" class="logo">PORTFOLIO</a>
+            <!--menu-->
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="contactsportfolio.html">Contact Us</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+            <!---bars-->
+            <div class="toggle"></div>
+        </nav>
+    </section>
+    <!--contact form-->
+    <section id="contact">
+        <!--social-->
+        <div class="social">
+            <!--icons-->
+            <a href="https://www.facebook.com/profile.php?id=100025169692693" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/Aryan98939692" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/theryan.2k1/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/aryan-gupta-851a72184" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <!--contact-box-->
+        <div class="contact-box">
+            <!--heading-->
+            <div class="c-heading">
+                <h1>Get In Touch</h1>
+                <p>Call or Email Us Regarding Question or Isuue</p>
+            </div>
+            <!--inputs-->
+            <div class="c-inputs">
+                <form action="mai.php" method="post">
+                <input type="text"name="name" placeholder="Full Name"/>
+                <input type="email" name="email" placeholder="Example@gmail.com"/>
+                <textarea type="text" name="message"placeholder="Write Message"></textarea>
+            </form>
+                <!--submitbtn-->
+                <button><a href="https://wa.me/7317054450"class="hire-btn">SEND</a></button>
+            </div>
+        </div>
+
+        <!--map-->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d457251.04653177585!2d80.05887659459614!3d26.44690184064632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c4770b127c46f%3A0x1778302a9fbe7b41!2sKanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1640537408466!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+    </section>
+    <!--contact me-->
+    <div class="contact-me">
+        <p>If You have any project contact me</p><br>
+        <button><a href="contactsportfolio.html" class="down-cv">Contact Me</a></button>
+    </div>
+    <!--attached social bar-->
+    <div class="a-social-b">
+        <a href="https://www.facebook.com/profile.php?id=100025169692693" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/Aryan98939692" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/theryan.2k1/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/aryan-gupta-851a72184" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+    </div>
+    <!--jquery-->
+    <script type="text/javascript" src="jQuery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+</body>
+</html>

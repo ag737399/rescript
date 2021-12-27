@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="professional1.css">
+    <link rel="stylesheet" href="jquery.flipster.min.css">
+    <!--using fontawesome-->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js"crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <!--navigation-->
+        <nav>
+            <!--logo-->
+            <a href="#" class="logo">PHOTOSHOP</a>
+            <!--menu-->
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="contactsportfolio.html">Contact Us</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+            <!---bars-->
+            <div class="toggle"></div>
+        </nav>
+    </section>
+    <div class="hero">
+        <div class="carousel">
+            <h1>Samples of Editing</h1>
+            <li><p>There are so many pics more than 1000 <br>I have edited as professional Editor with experience of more than 6 years in this field</p></li>
+            <ul>
+                <li><img src="Photoshop images/1.jpg"></li>
+                <li><img src="Photoshop images/2.jpg"></li>
+                <li><img src="Photoshop images/3.jpg"></li>
+                <li><img src="Photoshop images/4.jpg"></li>
+                <li><img src="Photoshop images/5.jpg"></li>
+                <li><img src="Photoshop images/6.jpg"></li>
+                <li><img src="Photoshop images/7.jpg"></li>
+                <li><img src="Photoshop images/8.jpg"></li>
+                <li><img src="Photoshop images/9.jpg"></li>
+                <li><img src="Photoshop images/10.jpg"></li>
+                <li><img src="Photoshop images/11.jpg"></li>
+                <li><img src="Photoshop images/12.jpg"></li>
+                <li><img src="Photoshop images/13.jpg"></li>
+                <li><img src="Photoshop images/14.jpg"></li>
+                <li><img src="Photoshop images/15.jpg"></li>
+                <li><img src="Photoshop images/16.jpg"></li>
+                <li><img src="Photoshop images/17.jpg"></li>
+                <li><img src="Photoshop images/18.jpg"></li>
+                <li><img src="Photoshop images/19.jpg"></li>
+                <li><img src="Photoshop images/20.jpg"></li>
+                <li><img src="Photoshop images/21.jpg"></li>
+            </ul>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.flipster.min.js"></script>
+    <script>
+        $('.carousel').flipster({
+            style:'carousel',
+            spacing:-0.3,
+        });
+    </script>
+    <!--contact me-->
+    <div class="contact-me">
+        <p>If You have any project contact me</p><br>
+        <button><a href="contactsportfolio.html" class="down-cv">Contact Me</a></button>
+    </div>
+    <!--footer-->
+    <footer>
+        <p>rescript.com</p><br>
+        <p>Don't be shy, say hi! 👋</p>
+    <!--social-->
+    <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=100025169692693" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/Aryan98939692" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/theryan.2k1/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/aryan-gupta-851a72184" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+    </div>
+    <!--copyright-->
+    <p>© ARYAN-GUPTA 2021. All rights reserved.</p>
+
+
+    </footer>
+    <!--attached social bar-->
+    <div class="a-social-b">
+        <a href="https://www.facebook.com/profile.php?id=100025169692693" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/Aryan98939692" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/theryan.2k1/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/aryan-gupta-851a72184" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+    </div>
+    <!--jquery-->
+    <script type="text/javascript" src="jQuery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+    
+</body>
+</html>

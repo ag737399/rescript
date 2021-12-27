@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project1.css">
+    <link rel="stylesheet" href="jquery.flipster.min.css">
+    <!--using fontawesome-->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js"crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <!--navigation-->
+        <nav>
+            <!--logo-->
+            <a href="#" class="logo">TECHNICAL PROJECTS</a>
+            <!--menu-->
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="contactsportfolio.html">Contact Us</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+            <!---bars-->
+            <div class="toggle"></div>
+        </nav>
+    </section>
+    <div class="hero">
+        <div class="carousel">
+            <h1>Technical Projects</h1>
+            <li><p>These all are the projects which i have Completed in last four year in Electronics Branch including major as well as minor projects and also done various software Projects</p></li><br>
+            <p>Click on the pics to get the source and working of the projects</p>
+            <ul>
+               <a href="https://github.com/ag737399/Obstacle-Avoiding-Robot/blob/master/working%20and%20description.pdf"><li><img src="Project/1.jpg"></li></a>
+               <a href="https://github.com/ag737399/Python-Assistant-"><li><img src="Project/2.jpg"></li></a>
+               <a href="https://github.com/ag737399/Real-Time-Object-detection"><li><img src="Project/3.png"></li></a>
+               <a href="https://github.com/ag737399/IOT-BASED-FACE-RECOGNITION-ROBOT"><li><img src="Project/4.jpg"></li></a>
+            </ul>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.flipster.min.js"></script>
+    <script>
+        $('.carousel').flipster({
+            style:'carousel',
+            spacing:-0.3,
+        });
+    </script>
+    <!--contact me-->
+    <div class="contact-me">
+        <p>If You have any project contact me</p><br>
+        <button><a href="contactsportfolio.html" class="down-cv">Contact Me</a></button>
+    </div>
+    <!--footer-->
+    <footer>
+        <p>rescript.com</p><br>
+        <p>Don't be shy, say hi! 👋</p>
+    <!--social-->
+    <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=100025169692693" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/Aryan98939692" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/theryan.2k1/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/aryan-gupta-851a72184" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+    </div>
+    <!--copyright-->
+    <p>© ARYAN-GUPTA 2021. All rights reserved.</p>
+
+
+    </footer>
+    <!--attached social bar-->
+    <div class="a-social-b">
+        <a href="https://www.facebook.com/profile.php?id=100025169692693" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/Aryan98939692" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/theryan.2k1/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/aryan-gupta-851a72184" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+    </div>
+    <!--jquery-->
+    <script type="text/javascript" src="jQuery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+    
+</body>
+</html>
