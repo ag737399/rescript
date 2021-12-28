@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="contact21.css">
+    <!--using fontawesome-->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js"crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <!--navigation-->
+        <nav>
+            <!--logo-->
+            <a href="#" class="logo">PORTFOLIO</a>
+            <!--menu-->
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="contactsportfolio.html">Contact Us</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+            <!---bars-->
+            <div class="toggle"></div>
+        </nav>
+    </section>
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>GET IN TOUCH</h3>
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="email" id="email" placeholder="Email id" required>
+            <input type="text" id="phone" placeholder="Phone no." required>
+            <textarea id="message" rows="4" placeholder="how can we help you?"></textarea>
+            <button type="submit">SEND</button>
+        </form>
+    </div>
+    <div class="a-social-b">
+        <a href="https://www.facebook.com/profile.php?id=100025169692693" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/Aryan98939692" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/theryan.2k1/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/aryan-gupta-851a72184" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.gmail.com",
+    Username : "rajg123f@gmail.com",
+    Password : "addyznccalrapgew",
+    To : 'ag737399@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "TNew contact form",
+    Body : "Name:"+document.getElementById("name").value + "<br>Email: "+ document.getElementById("email").value +"<br>Phone no: "+ document.getElementById("phone").value+"<br>Message: "+ document.getElementById("message").value
+}).then(
+  message => alert("message Sent Successfully")
+);
+        }
+        
+    </script>
+</body>
+</html>
